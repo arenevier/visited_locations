@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  app:
+    container_name: app
+    restart: on-failure
+    build: .
+    depends_on:
+      - postgis
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - '8000:8000'
+
+  postgis:
+    container_name: postgis
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile.postgis
+    volumes:
+      - data:/var/lib/postgresql/data/
+
+    environment:
+      - POSTGRES_DB=visited
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
+volumes:
+ data: {}

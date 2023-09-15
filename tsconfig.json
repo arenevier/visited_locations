@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "nodenext",
+    "module": "commonjs",
+    "target": "ES2022",
+    "outDir": "./dist"
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}
