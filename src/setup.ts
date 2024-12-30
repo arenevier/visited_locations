@@ -17,8 +17,8 @@ import { MAIN_PORT, APP_ROOT, PG_OPTIONS } from './constants';
 import type { Module, AreaFeature } from './types';
 
 const LEAFLET_ZIP_URL='https://leafletjs-cdn.s3.amazonaws.com/content/leaflet/v1.9.4/leaflet.zip';
-const SIMPLEBOX_SCRIPT_URL ='https://raw.githubusercontent.com/arenevier/simplebox/master/js/simplebox.js';
-const SIMPLEBOX_ICON_URL ='https://raw.githubusercontent.com/arenevier/simplebox/master/icons/close.png';
+const SIMPLEBOX_SCRIPT_URL='https://raw.githubusercontent.com/arenevier/simplebox/master/js/simplebox.js';
+const SIMPLEBOX_ICON_URL='https://raw.githubusercontent.com/arenevier/simplebox/master/icons/close.png';
 
 function unzip(zip_content: string | Buffer, target_directory: string) {
   const zip = new AdmZip(zip_content);
@@ -172,7 +172,7 @@ async function* import_data_from_plugin(script_file: string): AsyncGenerator<Are
 
 async function import_data() {
   const pg_client = new Client(PG_OPTIONS);
-  await pg_client.connect()
+  await pg_client.connect();
 
   const plugins_dir = path.join(APP_ROOT, 'dist', 'plugins');
   for await (const script of find_files_with_extension(plugins_dir, 'cjs')) {

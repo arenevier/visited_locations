@@ -87,6 +87,7 @@ async function main() {
   logger.log('app starting');
   const pg_client = new Client(PG_OPTIONS);
   await pg_client.connect();
+
   // eslint-disable-next-line @typescript-eslint/no-floating-promises
   registerCleanupMethod(() => { pg_client.end(); });
 

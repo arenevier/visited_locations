@@ -4,3 +4,4 @@ dist/
 static/leaflet/
 static/simplebox/
 logs/
+.env
