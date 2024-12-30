@@ -1,6 +1,6 @@
 # visited locations
 
-Visited locations is a webapp that allows to create maps of countries you have visited. For some countries, you can also specify subdivisions. For example, US states, or French departments. For example, here is a list of places I have bicycled to: https://visited.renevier.net/phipqanenikl
+Visited locations is a webapp that allows to create maps of countries you have visited. For some countries, you can also specify subdivisions. For example, US states, or French departments. For example, here is a list of places I have bicycled to: https://visited.renevier.net/chnqpmpuleyg
 
 Red is for countries. Orange is for US states or French departments. Blue is for US counties.
 
@@ -11,3 +11,8 @@ To create a map, start with a [blank map](https://visited.renevier.net/) and sel
 # Country boundaries
 
 Data for country and country boundaries comes from [Natural Earth](https://www.naturalearthdata.com/).
+
+# Subdivision boundaries
+Data came for various sources. Those data are available under various licenses.
+The source of the data is available in the respective "plugin" file. Please
+check the licences if you plan to use the data.
