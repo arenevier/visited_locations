@@ -1,6 +1,6 @@
 # visited locations
 
-Visited locations is a webapp that allows to create maps of countries you have visited. For some countries, you can also specify subdivisions. For example, US states, or French departments. For example, here is a list of places I have bicycled to: https://visited.renevier.net/chnqpmpuleyg
+Visited locations is a webapp that allows to create maps of countries you have visited. For some countries, you can also specify subdivisions. For example, US states, or French departments. For example, here is a list of places I have bicycled to: https://visited.renevier.net/brdcnrgesnfr
 
 Red is for countries. Orange is for US states or French departments. Blue is for US counties.
 
